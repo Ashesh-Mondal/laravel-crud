@@ -15,36 +15,36 @@
             @csrf
             <p>
                 <label for="name" class="form-label">Name:</label>
-                <input type="text" name="name" placeholder="Enter name" class="form-control">
+                <input type="text" name="name" placeholder="Enter name" class="form-control" required>
             </p>
 
             <p>
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" name="email" placeholder="Enter email" class="form-control">
+                <input type="email" name="email" placeholder="Enter email" class="form-control" required>
             </p>
 
             <p>
                 <label for="pass" class="form-label">Password:</label>
-                <input type="password" name="pass" placeholder="Enter password" class="form-control">
+                <input type="password" name="pass" placeholder="Enter password" class="form-control" required>
             </p>
 
 
             <p>
                 <label for="contact" class="form-label">Contact:</label>
-                <input type="number" name="contact" placeholder="Enter contact details" class="form-control">
+                <input type="number" name="contact" placeholder="Enter contact details" class="form-control" required>
             </p>
 
             <p>
                 <label class="form-check-label">Gender:</label>
-                <input type="radio" name="gender" id="M" value="M" class="form-check-input">
+                <input type="radio" name="gender" id="M" value="M" class="form-check-input" required>
                 <label for="M" class="form-check-label"> Male</label>
-                <input type="radio" name="gender" id="F" value="F" class="form-check-input">
+                <input type="radio" name="gender" id="F" value="F" class="form-check-input" required>
                 <label for="F" class="form-check-label"> Female</label>
             </p>
 
             <p>
                 <label for="city" class="form-label">City:</label>
-                <select name="city" id="city" class="form-select">
+                <select name="city" id="city" class="form-select" required>
                     <option value="">--Choose--</option>
                     <option value="del">Delhi</option>
                     <option value="kol">Kolkata</option>

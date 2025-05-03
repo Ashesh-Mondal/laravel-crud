@@ -30,5 +30,14 @@ class StudentController extends Controller
             $student->image = $fileName;
         }
         $student->save();
+        // for displaying alert message
+        return redirect()->back()->with('message', "New Student Added Successfully");
+        // return redirect('list-students');
+    }
+    public function listStudents()
+    {
+        $data = Student::all();
+        $w = array('results' => $data);
+        return view('list-students', $w);
     }
 }
